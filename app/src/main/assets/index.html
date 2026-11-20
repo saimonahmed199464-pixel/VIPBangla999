@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIPBangla999</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101010;color:white;font-family:Arial}
+header{background:#080808;padding:20px;color:#ffd700;font-size:24px;font-weight:bold}
+nav{display:flex;justify-content:space-around;background:#222;padding:15px}
+nav button{background:none;border:0;color:#ffd700;font-size:13px}
+.hero{margin:15px;padding:25px;background:linear-gradient(120deg,#705500,#171000);border:1px solid #c99d00;border-radius:15px}
+h2,h3{color:#ffd700}
+.card{background:#222;padding:18px;margin:12px;border-radius:12px;border:1px solid #554500}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
+.game{background:#252525;padding:25px 8px;text-align:center;border:1px solid #756000;border-radius:12px}
+.game b{display:block;color:#ffd700;margin-top:10px}
+.small{color:#aaa;font-size:12px}
+button{cursor:pointer}
+</style>
+</head>
+<body>
+<header>👑 VIPBangla999</header>
+<nav>
+<button onclick="page('home')">Home</button>
+<button onclick="page('cricket')">Cricket</button>
+<button onclick="page('football')">Football</button>
+<button onclick="page('games')">Games</button>
+<button onclick="page('profile')">Profile</button>
+</nav>
+
+<section id="home">
+<div class="hero">
+<p>WELCOME TO VIP WORLD</p>
+<h2>Premium Experience</h2>
+<p>Welcome to VIPBangla999 Demo</p>
+</div>
+<div class="card">
+<h3>🏏 Featured Cricket</h3>
+Bangladesh 🇧🇩 VS India 🇮🇳
+<p class="small">Sample match information</p>
+</div>
+<div class="card">
+<h3>⚽ Featured Football</h3>
+Brazil 🇧🇷 VS Argentina 🇦🇷
+<p class="small">Sample match information</p>
+</div>
+</section>
+
+<section id="cricket" hidden>
+<div class="card"><h3>🏏 Cricket Zone</h3>Bangladesh vs India</div>
+<div class="card">Australia vs England</div>
+</section>
+
+<section id="football" hidden>
+<div class="card"><h3>⚽ Football Zone</h3>Brazil vs Argentina</div>
+<div class="card">Real Madrid vs Barcelona</div>
+</section>
+
+<section id="games" hidden>
+<h3 style="padding:15px">🎮 Entertainment Games</h3>
+<div class="grid">
+<div class="game">🎰<b>Slots Demo</b></div>
+<div class="game">🃏<b>Card Demo</b></div>
+<div class="game">🎯<b>Lucky Game</b></div>
+<div class="game">🎡<b>Spin Demo</b></div>
+</div>
+</section>
+
+<section id="profile" hidden>
+<div class="card"><h3>👑 VIP Profile</h3>Virtual Coins: 1000<p class="small">Demo account only</p></div>
+</section>
+
+<footer style="text-align:center;padding:25px;color:#888">
+VIPBangla999 © 2026<br>Virtual demo only. No real-money betting.
+</footer>
+
+<script>
+function page(id){
+document.querySelectorAll('section').forEach(s=>s.hidden=true);
+document.getElementById(id).hidden=false;
+}
+</script>
+</body>
+</html>
